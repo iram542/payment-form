@@ -1,0 +1,113 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* PAGE BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #e0f2ff, #f7f9fc);
+    padding: 20px;
+}
+
+/* FORM CONTAINER */
+form {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    animation: slideUp 1s ease;
+}
+
+/* ANIMATION */
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* HEADINGS */
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+h2 {
+    color: #333;
+    margin-top: 25px;
+}
+
+/* TEXT */
+p {
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* INPUT FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* GENDER FIELD */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* BUTTON */
+input[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
